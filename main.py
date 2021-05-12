@@ -121,7 +121,7 @@ def sanitise_msg(msg: str) -> str:
 
 def get_main_buttons() -> List[InlineKeyboardButton]:
     return [
-        # InlineKeyboardButton("🔔 Setup Alert", callback_data='cmd: setup_alert'),
+        InlineKeyboardButton("🔔 Setup Alert", callback_data='cmd: setup_alert'),
         InlineKeyboardButton("🔍 Check Open Slots", callback_data='cmd: check_slots'),
     ]
 
